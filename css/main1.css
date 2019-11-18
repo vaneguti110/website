@@ -24,17 +24,21 @@ body code {
     float: left;
 }
 
-/*Media queries in our Less files to create the key breakpoints in our grid system */
+/* Media queries in our Less files to create the key breakpoints in our grid system
 @screen-xs-max: auto;
 @screen-sm-max: 750px;
-@screen-md-max: 970px;
+@screen-md-max: 970px; */
 
 /* Extra small devices (phones, less than 768px) */
-@media (max-width: @screen-xs-max) { ... }
+@media (max-width: auto) { 
+
+} 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) and (max-width:) { ... }
+@media (min-width: 750px) and (max-width:970px) { 
+}
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: 970px) and (max-width: 1080px) { 
+ }
 
 
 
@@ -43,6 +47,7 @@ body code {
 
 header {
     height: 800px;
+    /*flex:1;*/
     background: url('../img/hero.png');
     background-size: cover;
 
@@ -59,7 +64,7 @@ header h1 {
 
 nav {
     float: right;
-    padding: 75px 40px;
+    padding: 27px 40px;
 
 }
 nav ul li{
@@ -75,7 +80,7 @@ nav ul li a {
 header h2 {
     clear: both;
     font-family: 'Lora', serif;
-    font-size: 45px;
+    font-size: 36px;
     line-height: 50px;
     color: #9a9b9b;
     padding: 20px 0;
@@ -88,36 +93,6 @@ header h2 span {
 
 h4{
     font-weight: bold;
-}
-
-/***** SPAN for the holstee manifesto quote in the ABOUT SECTION *****/
-
-.big{
-    font-size: 20px;
-    text-transform: capitalize;
-    color: darkslateblue;
-    text-align: justify;
-}
-.small_caps{
-    font-size: 14px;
-    font-variant: small-caps;
-    color: seagreen;
-    text-align: justify;
-}
-
-.medium{
-    font-size: 17px;
-    text-transform: capitalize;
-    color: darkolivegreen;
-    text-align: justify;
-}
-.small{
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: capitalize;
-    color: darksalmon;
-    text-align:justify;
-
 }
 
 /***** ABOUT SECTION *****/
@@ -186,10 +161,6 @@ code #work p {
    padding-right: 8%;
 }
 
- #envelope {
-    padding: 0 96px;
-}
-
  #contact h2 {
     font-family: 'Lora', serif;
     font-weight: bold;
@@ -198,7 +169,7 @@ code #work p {
 }
 
  #email-header{
-    font-size: 32px;
+    font-size: 30px;
     color:#2b2b2b;
     font-weight: normal;
     margin: 0px 0 5px 0;
@@ -215,7 +186,7 @@ code #work p {
     text-decoration: none;
     color: #c49075;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 20px;
 }
 
  #contact ul {
@@ -231,6 +202,7 @@ code #work p {
     padding-top: 14%;
 }
 
-#envelope {
-  margin-left: -8%;
+ #envelope {
+  /*margin-left: -31%;*/
+  padding: 0 96px; 
 }
